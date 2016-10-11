@@ -25,18 +25,19 @@ switch(url_prefix){
       var referrer = url_referrer.split('/')[2];
       if (referrer === KEIO_AUTH) {
         $("input").change(function(){
-          setTimeout(function(){callClickEvent2(document.querySelectorAll('input')[2]); },1000);
+          setTimeout(function(){callClickEvent2(document.querySelectorAll('input')[2]); },300);
         });
       } else {
         $("input").change(function(){
-          setTimeout(function(){document.querySelectorAll('input')[2].click(); },1000);
+          setTimeout(function(){document.querySelectorAll('input')[2].click(); },300);
         });
       }
     } else {
       $("input").change(function(){
-        setTimeout(function(){document.querySelectorAll('input')[2].click(); },1000);
+        setTimeout(function(){document.querySelectorAll('input')[2].click(); },300);
       });
     }
+
     break;
 
   case KEIO_AUTH:
