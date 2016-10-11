@@ -20,7 +20,7 @@ function callClickEvent2(element){
 switch(url_prefix){
   case KEIO_LOGIN:
     var url_referrer = document.referrer; 
-    if(url_referrer !== null || url_referrer !== undefined && 
+    if(url_referrer !== null && url_referrer !== undefined && 
     url_referrer !== ""){
       var referrer = url_referrer.split('/')[2];
       if (referrer === KEIO_AUTH) {
