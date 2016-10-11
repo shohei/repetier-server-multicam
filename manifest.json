@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "auto clicker for remote access",
+  "description": "automatically redirect to subscribed page",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "icons": {"48": "icon.png" },
+  "content_scripts": [
+    {
+      "matches": ["https://otp-libproxy2.keio.jp/app/remote/keiojp/","https://auth.lib.keio.ac.jp/db/","http://kras1.lib.keio.ac.jp/*","http://link.springer.com/*","http://ieeexplore.ieee.org/*","http://er.lib.keio.ac.jp.kras1.lib.keio.ac.jp/dbnavi/*"],
+      "js": ["jquery.js", "myscript.js"]
+    }
+  ]
+}
